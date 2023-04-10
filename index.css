@@ -1,9 +1,28 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+    
 }
 section{
     height: 100vh;
     width: 100vw;
     border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
 }
+
+.sinBordes{
+    border: none;
+}
+
+.divSombreado {
+    padding: 10px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .sombreado {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
