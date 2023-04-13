@@ -58,9 +58,9 @@ section{
   background-size: cover;
 }
 
-.card{
-  width: 25rem;
-  height: 30rem;
+#card{
+  width: 30%;
+  height: 80%;
   border: 1px solid black;
   margin: auto;
   display: flex;
@@ -82,16 +82,24 @@ section{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  top: 20px;
   position: absolute;
-  top: 0;
   text-align: center;
   font-size: 1rem;
+  width: 90%;
+}
+.display{
+  display:block
+}
+.no-display{ 
+    display:none
 }
 .container-check i{
   padding-right: 2rem;
   color: forestgreen;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
+
 .form__container{
   display: flex;
   justify-content: center;
@@ -103,7 +111,6 @@ section{
   position: absolute;
   top:0;
   color: black;
-  font-size: 1.5rem;
 }
 .form__container .form__enviar{
   width: 80%;

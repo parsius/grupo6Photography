@@ -38,10 +38,16 @@ const check = document.getElementById("check")
 
 basico.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Basico! Por favor dejanos tus datos asi te contactamos!" 
+    check.classList.remove("no-display")
+    check.classList.add("display")
 })
 standar.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Standar! Por favor dejanos tus datos asi te contactamos!" 
+    check.classList.remove("no-display")
+    check.classList.add("display")
 })
 premium.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Premium! Por favor dejanos tus datos asi te contactamos!" 
+    check.classList.remove("no-display")
+    check.classList.add("display")
 })
