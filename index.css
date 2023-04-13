@@ -43,3 +43,105 @@ section{
     height: 300px; /* Establece la altura deseada */
     object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
   }
+
+
+
+  /*-----------------------------------------Contacto -----------------------------------------*/
+#contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url("https://andro4all.com/hero/2021/09/8-apps-para-descubrir-eventos-cercanos-a-tu-ubicacion.jpg?width=1200");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  width: 25rem;
+  height: 30rem;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to right, #ff9b9b, #a78b8b);
+  border: none;
+  z-index: 10;
+  border-radius: 25px;
+  position: relative;
+
+}
+.container-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+.container-check i{
+  padding-right: 2rem;
+  color: forestgreen;
+  font-size: 1.4rem;
+}
+.form__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px 0;
+}
+.form__container h2{
+  position: absolute;
+  top:0;
+  color: black;
+  font-size: 1.5rem;
+}
+.form__container .form__enviar{
+  width: 80%;
+  position: absolute;
+  bottom: 2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+}
+.form__input{
+  border: none;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 25px;
+  text-align: center;
+}
+.form__input:hover{
+  outline: #a78b8b 1px solid;
+}
+.form__input:focus{
+  outline: #ff9b9b 2px solid;
+}
+#botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.botones-item{
+  width: 100px;
+  height: 50px;
+  background: white;
+  text-align: center;
+}
+
+
+.activo{
+  display: flex;
+  padding-right: 1rem;
+  color: forestgreen;
+}

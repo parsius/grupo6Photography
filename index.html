@@ -86,9 +86,28 @@
         <h1>martin</h1>    
     </section>
     
-    <section id="contacto container" >
-        <h1>lucas</h1>   
-    </section>
+    <section id="contacto">
+        <div class="card">
+            <div class="container-check">
+                <h2 id="mensaje-contacto">Hola! Por favor comentanos lo que quieras</h2>
+                <i class="fa-solid fa-circle-check" id="check"></i>
+            </div>
+            <form class="form" action = "https://formspree.io/f/xzbqkknz" method="POST">
+                <div class="form__container">
+                    <input type="text" class="form__input" placeholder="Nombre: " required name="name">
+                    <input type="text" class="form__input" placeholder="Telefono: " required name="telefono">
+                    <input type="email" class="form__input" placeholder="Email:" required name="email">
+                    <textarea cols="30" rows="5" class="form__input message" placeholder="Mensaje: " name="message"></textarea>
+                    <input type="Submit" value="Enviar!" class="form__enviar">
+                </div>
+            </form>
+        </div>
+        <div id="botones">
+            <div id="basico" class="botones-item">Basico</div>
+            <div id="standar" class="botones-item">Standar</div>
+            <div id="premium" class="botones-item">Premimu</div>
+        </div>
+</section>
 
 
     <!-- JS BOOTSTRAP-->
