@@ -3,15 +3,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     var divs = document.getElementsByClassName('divSombreado');
     
+    
     for (var i = 0; i < divs.length; i++) {
       divs[i].addEventListener('click', function() {
         // Removemos la clase 'sombreado' de todos los divs
         for (var j = 0; j < divs.length; j++) {
           divs[j].classList.remove('sombreado');
+          divs[j].classList.remove('bgGrey');
         }
         
         // Agregamos la clase 'sombreado' al div clickeado
         this.classList.add('sombreado');
+        this.getElementsByClassName("card-text").classList.add("sombreado")
+        
+        
       });
     }
   });
