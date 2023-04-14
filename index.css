@@ -62,7 +62,6 @@ section{
   width: 30%;
   height: 80%;
   border: 1px solid black;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,6 +74,7 @@ section{
   z-index: 10;
   border-radius: 25px;
   position: relative;
+  overflow: hidden;
 
 }
 .container-check{
@@ -112,6 +112,10 @@ section{
   top:0;
   color: black;
 }
+.form__container .form__input{
+  border: none;
+  outline: none;
+}
 .form__container .form__enviar{
   width: 80%;
   position: absolute;
@@ -120,24 +124,52 @@ section{
   border: none;
   border-radius: 25px;
 }
+.form__enviar{
+  padding: 15px;
+  background: #f5caca;
+  border: 0;
+}
+.form__enviar:hover{
+  background-color: black;
+  color: white;
+}
+.form__enviar:focus{
+  background-color: black;
+  color: white;
+  outline: 0;
+}
+.form__enviar:active{
+  background-color: black;
+  color: white;
+  transform: scale(0.98);
+}
 .form__input{
   border: none;
   width: 100%;
   padding: 10px 5px;
   border-radius: 25px;
   text-align: center;
+  position: relative;
 }
-.form__input:hover{
-  outline: #a78b8b 1px solid;
+.form__input input:active{
+  outline: none;
+  border: none;
+
 }
-.form__input:focus{
-  outline: #ff9b9b 2px solid;
+textarea{
+  resize: none;
 }
+
+
+
 #botones{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+  position: absolute;
+  top:200%;
+  border: 1px solid black
 }
 .botones-item{
   width: 100px;
