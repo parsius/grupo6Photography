@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/74a7db5627.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
@@ -100,15 +101,16 @@
                     <input type="text" class="form__input" placeholder="Nombre: " required name="name">
                     <input type="text" class="form__input" placeholder="Telefono: " required name="telefono">
                     <input type="email" class="form__input" placeholder="Email:" required name="email">
-                    <textarea cols="30" rows="5" class="form__input message" placeholder="Mensaje: " name="message"></textarea>
+                    <textarea cols="30" rows="5" class="form__input message" autocapitalize="none"
+                    placeholder="Mensaje: " name="message"></textarea>
                     <input type="Submit" value="Enviar!" class="form__enviar">
                 </div>
             </form>
         </div>
         <div id="botones">
-            <div id="basico" class="botones-item">Basico</div>
-            <div id="standar" class="botones-item">Standar</div>
-            <div id="premium" class="botones-item">Premimu</div>
+            <div id="basico" class="botones-item"><a href="#card">Basico</a></div>
+            <div id="standar" class="botones-item"><a href="#card">Standar</a></div>
+            <div id="premium" class="botones-item"><a href="#card">Premium</a></div>
         </div>
 </section>
 

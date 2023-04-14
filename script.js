@@ -84,3 +84,16 @@ premium.addEventListener("click", function(){
     check.classList.remove("no-display")
     check.classList.add("display")
 })
+
+window.sr = ScrollReveal();
+  
+  sr.reveal('#card',{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-100px'
+  });
+  sr.reveal('.form__input',{
+    duration: 2500,
+    origin: 'bottom',
+    distance: '-100px'
+  });
