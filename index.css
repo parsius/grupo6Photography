@@ -12,22 +12,35 @@ section{
     margin: 0px;
 }
 
+.sinColor{
+    background-color: transparent;
+}
 .sinBordes{
     border: none;
 }
+
 
 .divSombreado {
     padding: 10px;
     cursor: pointer;
     margin-bottom: 10px;
   }
-  
+
+#carruselContainer{
+    overflow: visible;
+}
   .sombreado {
-      background-color: gray;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 123, 255, 0.5);
+    transform: scale(1.1,1.1);
+    box-shadow: -15px 10px 4px rgba(0, 0, 0, 0.3);
       opacity: 0.9;
-      transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+      transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
       cursor: pointer;
+  }
+
+  .sombra{
+    box-shadow: -15px 10px 4px rgba(0, 0, 0, 0.3);
+
   }
 
   .bgGrey{
@@ -45,6 +58,15 @@ section{
     object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
   }
 
+  #fotos{
+    background-image: url("fotos/fotos_general/fotoFondoFotografia5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+  }
+
+  fondo
+  /*FIN CSS PABLO*/
 
 
   /*-----------------------------------------Contacto -----------------------------------------*/

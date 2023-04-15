@@ -35,19 +35,44 @@ document.addEventListener('DOMContentLoaded', function() {
         //Cambiare las fotos
         let imagenesCarrusel= $(".carousel-item img")
         let fotosCarrusel1=["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"]
-        
+        let carruselContainer=$("#carruselContainer")
         //let arrayFotosCarrusel=[]
         console.log(imagenesCarrusel);
         
-        imagenesCarrusel.fadeOut(1000, function() {
-            for (var k = 0; k < imagenesCarrusel.length; k++) {
-                let nuevoPath= "fotos/"+"carrusel"+numero+"/"+fotosCarrusel1[k]
-                imagenesCarrusel.eq(k).attr("src",nuevoPath)
-              }
+        // Ocultar las imágenes actuales con animación de desvanecimiento hacia la izquierda
+        
+        imagenesCarrusel.animate({
             
-            // Muestra las nuevas imágenes de forma animada
-            imagenesCarrusel.fadeIn(1000);
-          });
+            opacity: 0,
+            marginLeft: "-100%"
+        }, 1000, function() {
+            // Cambiar las rutas de las imágenes y establecer la opacidad en 0
+            for (let i = 0; i < imagenesCarrusel.length; i++) {
+            let nuevoPath = "fotos/carrusel" + numero + "/" + fotosCarrusel1[i];
+            imagenesCarrusel.eq(i)
+                .attr("src", nuevoPath)
+                .css({
+                opacity: 0,
+                marginLeft: "100%"
+                });
+            }
+        
+            // Mostrar las nuevas imágenes con animación de aparición desde la derecha
+            imagenesCarrusel.animate({
+            opacity: 1,
+            marginLeft: 0
+            }, 1000);
+            
+        });
+        
+  
+  
+  
+  
+  
+  
+  
+        
         
         
       });
