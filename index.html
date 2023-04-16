@@ -5,16 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/74a7db5627.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
+<<<<<<< HEAD
     <section id="presentacion"><h1>claudio</h1></section>
 
+=======
+    <section id="presentacion container">
+      <h1>claudio</h1>
+    </section>
+    <!-- <p class="card-text">Fotografa experta en fiestas de quince</p>
+        <p class="card-text">Fotrografo especializado en bodas y eventos formales</p>
+        <p class="card-text">Fotografa de exteriores y zonas urbanas</p>
+        <p class="card-text">Fotografa de eventos deportivos y campeonatos</p>
+-->
+    <section id="fotos">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col col-3">
+                    <div class="card divSombreado h-100 sinColor mt-2 " style="width: 8rem;  border: none;" id="fotografo0">
+                        <img src="avatars/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        </div>
+                      </div>
+                </div>
+                <div class="col col-3">
+                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem; border: none;" id="fotografo1">
+                        <img src="avatars/User-Avatar-Profile-Free-PNG.png" class="card-img-top " alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem;  border: none;" id="fotografo2">
+                        <img src="avatars/vecteezy_avatar-of-a-woman-in-hat_13923653_822.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem;  border: none;" id="fotografo3">
+                        <img src="avatars/vecteezy_avatar-of-a-brunette-woman_13923647_946.png" class="card-img-top imgPos" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-4 text-center">
+                    <p id="fraseFotografo"></p>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col mt-3 d-flex align-items-center justify-content-center">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade w-50">
+                        <div class="carousel-inner rounded-4 sombra" id="carruselContainer">
+                          <div class="carousel-item active">
+                            <img src="fotos/carrusel1/imagen1.jpg" class="d-block w-100 rounded-4" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fotos/carrusel1/imagen2.jpg" class="d-block w-100 rounded-4" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fotos/carrusel1/imagen3.jpg" class="d-block w-100 rounded-4" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+>>>>>>> decaad25d8421245b43a5cd1d6f3015fc1f5007e
     
-    <section id="fotos"><h1>pablo</h1></section>
+    <section id="cotizacion container">
+        <h1>martin</h1>    
+    </section>
     
-    <section id="cotizacion"><h1>martin</h1></section>
-    
-    <section id="contacto"><h1>lucas</h1></section>
+    <section id="contacto">
+        <div id="card">
+            <div class="container-check">
+                <h5 id="mensaje-contacto">Hola! Por favor comentanos lo que quieras</h5>
+                <i class="fa-solid fa-circle-check no-display" id="check"></i>
+            </div>
+            <form class="form" action = "https://formspree.io/f/xzbqkknz" method="POST">
+                <div class="form__container">
+                    <input type="text" class="form__input" placeholder="Nombre: " required name="name">
+                    <input type="text" class="form__input" placeholder="Telefono: " required name="telefono">
+                    <input type="email" class="form__input" placeholder="Email:" required name="email">
+                    <textarea cols="30" rows="5" class="form__input message" autocapitalize="none"
+                    placeholder="Mensaje: " name="message"></textarea>
+                    <input type="Submit" value="Enviar!" class="form__enviar">
+                </div>
+            </form>
+        </div>
+        <div id="botones">
+            <div id="basico" class="botones-item"><a href="#card">Basico</a></div>
+            <div id="standar" class="botones-item"><a href="#card">Standar</a></div>
+            <div id="premium" class="botones-item"><a href="#card">Premium</a></div>
+        </div>
+</section>
+
+
+    <!-- JS BOOTSTRAP-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
