@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.add('sombreado');
         
         //Cambiare las fotos
-        let imagenesCarrusel= $(".carousel-item img")
-        let fotosCarrusel1=["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"]
+        let imagenesCarrusel= $(".mio img")
+        const fotosCarrusel1=["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"]
         let carruselContainer=$("#carruselContainer")
         //let arrayFotosCarrusel=[]
         console.log(imagenesCarrusel);
@@ -47,9 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
             marginLeft: "-100%"
         }, 1000, function() {
             // Cambiar las rutas de las imágenes y establecer la opacidad en 0
-            for (let i = 0; i < imagenesCarrusel.length; i++) {
-            let nuevoPath = "fotos/carrusel" + numero + "/" + fotosCarrusel1[i];
-            imagenesCarrusel.eq(i)
+            for (let j = 0; j < imagenesCarrusel.length; j++) {
+              console.log(j);
+              console.log(imagenesCarrusel);
+            let nuevoPath = "fotos/carrusel" + numero + "/" + fotosCarrusel1[j];
+            
+            imagenesCarrusel.eq(j)
                 .attr("src", nuevoPath)
                 .css({
                 opacity: 0,
@@ -63,17 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             marginLeft: 0
             }, 1000);
             
-        });
-        
-  
-  
-  
-  
-  
-  
-  
-        
-        
+        });   
         
       });
     }
