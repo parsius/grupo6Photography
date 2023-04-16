@@ -297,21 +297,7 @@ textarea{
 
 */Css claudio*/
 
-body {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.head {
-  display: flex;
-  align-items: right;
-  justify-content: space;
-  height: 10px;
-  background: #8c8a8a;
-  position: relative;
-  width: 30px;
-  z-index: 100;
-
-}
+  
 nav{
   position: fixed;
 }
