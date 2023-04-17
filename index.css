@@ -496,3 +496,10 @@ nav a:hover {
 li{
   list-style: none;
 }
+@media (max-width: 991px) {
+#container-footer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+}
