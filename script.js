@@ -1,7 +1,7 @@
 
 //JS PABLO SECTION FOTOS
 //Consulta a API
-/*
+
 var myHeaders = new Headers();
 myHeaders.append("apikey", "TFrj5GPi5J5kvfnlgjWVt4XPlzSWjoZc");
 
@@ -44,27 +44,27 @@ fetch("https://api.apilayer.com/fixer/convert?to=ARS&from=USD&amount=25", reques
   })
   .catch(error => console.log('error', error));
 
-*/
+
 
 
 
 const pdfGenerator=()=>{
-  // Cargar el contenido del archivo HTML externo
+  // Cargo el contenido del archivo HTML externo
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'pdf.html', true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      // Crear un elemento div para renderear el contenido HTML en un canvas
+      // Creo un elemento div para renderear el contenido HTML en un canvas
       var div = document.createElement('div');
       div.innerHTML = xhr.responseText;
       document.body.appendChild(div);
 
-      // Usar html2canvas para convertir el contenido HTML en una imagen
+      // Uso html2canvas para convertir el contenido HTML en una imagen
       html2canvas(div).then(function(canvas) {
         // Crear un nuevo documento PDF
         var doc = new jsPDF();
 
-        // Agregar la imagen al PDF
+        // Agrego la imagen al PDF
         var imgData = canvas.toDataURL('image/jpeg');
         doc.addImage(imgData, 'JPEG', 10, 10, 190, 0);
 
@@ -82,6 +82,7 @@ const pdfGenerator=()=>{
 ;
 
 }
+
 document.getElementById("pdf").addEventListener("click", pdfGenerator);
 
 
