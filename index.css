@@ -295,15 +295,40 @@ textarea{
 }
 
 
-*/Css claudio*/
+/*Css claudio*/
 
-  
-nav{
+#presentacion {
+  background-image: url(
+    fotos/portada/andscape-argentina.jpg
+
+  );
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+
+} 
+nav {
   position: fixed;
+  top: 0;
+  width: 0;
+  background-color: #656464;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 05px;
+  width: 100%;
+  background-color: #edebeb;
+  color: #75787b77;
+  }
 .alinear-derecha {
   text-align: right;
   
+}
+.texto { 
+position: relative;
+justify-self: center;
+
 }
  
 nav ul {
@@ -315,18 +340,18 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0;
 }
 nav a {
   display: block;
   text-decoration: none;
-  color: #333;
+  color: #d3caca;
   font-weight: bold;
-  padding: 10px;
+  padding: 05px;
   border-radius: 5px;
   transition: background-color 0.3s ease; /* Agrega una transición suave */
 }
 nav a:hover {
   background-color: #333;
-  color: #fff;
+  color: #c8c6c6;
 }
