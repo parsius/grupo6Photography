@@ -20,6 +20,8 @@ const pdfGenerator=()=>{
         var imgData = canvas.toDataURL('image/jpeg');
         doc.addImage(imgData, 'JPEG', 10, 10, 190, 0);
 
+
+        
         // Guardar el PDF
         doc.save('documento.pdf');
 
