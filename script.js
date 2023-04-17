@@ -163,4 +163,10 @@ window.sr = ScrollReveal();
     origin:'top',
     distance: '-100px',
     reset:true
+  });
+  sr.reveal('#container-nosotros',{
+    duration:2000,
+    origin:'top',
+    distance:'-100px',
+    reset:true
   })
