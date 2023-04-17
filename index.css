@@ -276,7 +276,7 @@ height: 100%;
     transform-style: preserve-3d;
     text-align: center;
     position: relative;
-    background: linear-gradient(to left, #faf8f8, #f5caca);
+    background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(9,120,121,1) 35%, rgba(0,212,255,1) 100%);
     border: none;
     z-index: 10;
     border-radius: 25px;
@@ -477,4 +477,22 @@ nav a:hover {
     font-size: 1.3rem;
     width: 75%;
   }
+}
+
+/*-----------------------------Footer-------------------------*/
+#footer{
+  height: 30vh;
+ 
+}
+#container-footer{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  padding-top: 50px;
+}
+li{
+  list-style: none;
 }
