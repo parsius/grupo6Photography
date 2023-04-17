@@ -1,10 +1,50 @@
 
 //JS PABLO SECTION FOTOS
 //Consulta a API
+/*
+var myHeaders = new Headers();
+myHeaders.append("apikey", "TFrj5GPi5J5kvfnlgjWVt4XPlzSWjoZc");
 
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow',
+  headers: myHeaders
+};
 
+fetch("https://api.apilayer.com/fixer/convert?to=ARS&from=USD&amount=25", requestOptions)
+  .then(response => response.json())
+  .then(result => 
+    {
+      let h2Element= $("#basico .item-botones .precio")
+      let nuevoTexto = h2Element.text() +" ("+Math.floor(result.result) +" pesos)" 
+      h2Element.text(nuevoTexto)
+  
+  })
+  .catch(error => console.log('error', error));
 
+  fetch("https://api.apilayer.com/fixer/convert?to=ARS&from=USD&amount=50", requestOptions)
+  .then(response => response.json())
+  .then(result => 
+    {
+      let h2Element= $("#standar .item-botones .precio")
+      let nuevoTexto = h2Element.text() +" ("+Math.floor(result.result) +" pesos)" 
+      h2Element.text(nuevoTexto)
+  
+  })
+  .catch(error => console.log('error', error));
+  
+  fetch("https://api.apilayer.com/fixer/convert?to=ARS&from=USD&amount=90", requestOptions)
+  .then(response => response.json())
+  .then(result => 
+    {
+      let h2Element= $("#premium .item-botones .precio")
+      let nuevoTexto = h2Element.text() +" ("+Math.floor(result.result) +" pesos)" 
+      h2Element.text(nuevoTexto)
+  
+  })
+  .catch(error => console.log('error', error));
 
+*/
 
 
 
