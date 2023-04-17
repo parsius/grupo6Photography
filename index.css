@@ -183,9 +183,8 @@ nav a:hover {
 
 .botones{
   width: 25%;
-  height: 90vh;
-  border: 1px solid black;
-  background-color:white;
+  height: 65vh;
+  
   cursor: pointer;
   position: relative;
   border-radius: 25px;
@@ -201,6 +200,32 @@ nav a:hover {
 .botones li{
   gap: 20px;
   margin: 20px;
+}
+
+#basico{
+  background: rgb(2,0,36);
+background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(9,120,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#standar{
+  background: rgb(2,0,36);
+background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(9,30,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#premium{
+  background: rgb(2,0,36);
+  background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.item-botones{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+height: 100%;
 }
 
 @media (max-width: 991px) {
