@@ -121,34 +121,46 @@ const basico = document.getElementById("basico");
 const standar = document.getElementById("standar");
 const premium = document.getElementById("premium");
 const mensaje = document.getElementById("mensaje-contacto");
-const check = document.getElementById("check")
+const check = document.getElementById("check");
+const redes = document.getElementById("redes")
 
 
 basico.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Basico! Por favor dejanos tus datos asi te contactamos!" 
     check.classList.remove("no-display")
     check.classList.add("display")
+    window.location.href = "#contacto"
 })
 standar.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Standar! Por favor dejanos tus datos asi te contactamos!" 
     check.classList.remove("no-display")
     check.classList.add("display")
+    window.location.href = "#contacto"
 })
 premium.addEventListener("click", function(){
     mensaje.textContent="Elegiste el plan Premium! Por favor dejanos tus datos asi te contactamos!" 
     check.classList.remove("no-display")
     check.classList.add("display")
+    window.location.href = "#contacto"
 })
 
 window.sr = ScrollReveal();
   
   sr.reveal('#card',{
     duration: 2000,
-    origin: 'bottom',
-    distance: '-100px'
+    origin: 'top',
+    distance: '-100px',
+    reset:true
   });
   sr.reveal('.form__input',{
     duration: 2500,
-    origin: 'bottom',
-    distance: '-100px'
+    origin: 'top',
+    distance: '-100px',
+    reset:true
   });
+  sr.reveal('#redes',{
+    duration:2000,
+    origin:'top',
+    distance: '-100px',
+    reset:true
+  })
