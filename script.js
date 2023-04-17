@@ -1,5 +1,40 @@
 
 //JS PABLO SECTION FOTOS
+const pdfGenerator=()=>{
+  // Cargar el contenido del archivo HTML externo
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'pdf.html', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // Crear un elemento div para renderear el contenido HTML en un canvas
+      var div = document.createElement('div');
+      div.innerHTML = xhr.responseText;
+      document.body.appendChild(div);
+
+      // Usar html2canvas para convertir el contenido HTML en una imagen
+      html2canvas(div).then(function(canvas) {
+        // Crear un nuevo documento PDF
+        var doc = new jsPDF();
+
+        // Agregar la imagen al PDF
+        var imgData = canvas.toDataURL('image/jpeg');
+        doc.addImage(imgData, 'JPEG', 10, 10, 190, 0);
+
+        // Guardar el PDF
+        doc.save('documento.pdf');
+
+        // Remover el elemento div creado para renderear el contenido HTML
+        document.body.removeChild(div);
+      });
+    }
+  };
+  xhr.send();
+;
+
+}
+document.getElementById("pdf").addEventListener("click", pdfGenerator);
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var divs = document.getElementsByClassName('divSombreado');
     

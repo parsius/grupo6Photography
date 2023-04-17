@@ -14,7 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu&display=swap" rel="stylesheet">
+  
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disable" href="#"></a>
+              <a class="nav-link" href="#" id="pdf">Descarga pdf</a>
             </li>
           </ul>
         </div>
@@ -65,176 +68,7 @@
               class="card-img-top" alt="...">
             <div class="card-body">
             </div>
-            <div class="row d-lg-none">
-                <div class="col col-12 d-flex justify-content-center mt-3 ">
-                    <div class="card h-100 sinColor mt-2 " style="width: 8rem;  border: none;" id="fotografo0">
-                        <img src="avatars/User-Avatar-Profile-Free-PNG.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex">
-                    <div class="col col-1"></div>
-                    <div class="col col-10 mt-3 text-center rounded-4">
-                    <p id="fraseFotografo" class="rounded-4">Fotrografo especializado en bodas y eventos formales</p>
-                </div> 
-                </div>
-                <div class="col col-12 mt-3 mb-5 d-flex align-items-center justify-content-center">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-75" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner rounded-4 sombra" id="carruselContainer">
-                          <div class="carousel-item active">
-                            <img src="fotos/carrusel1/imagen1.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel1/imagen2.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel1/imagen3.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                        </div>
-                        
-                      </div>
-                </div>
-            </div>
-            <div class="row d-lg-none">
-                <div class="col col-12 d-flex justify-content-center mt-3 ">
-                    <div class="card h-100 sinColor mt-2 " style="width: 8rem;  border: none;" id="fotografo0">
-                        <img src="avatars/vecteezy_avatar-of-a-woman-in-hat_13923653_822.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex">
-                    <div class="col col-1"></div>
-                    <div class="col col-10 mt-3 text-center rounded-4">
-                    <p id="fraseFotografo" class="rounded-4">Fotografa de exteriores y zonas urbanas</p>
-                </div> 
-                </div>
-                <div class="col col-12 mt-3 mb-5 d-flex align-items-center justify-content-center">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-75" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner rounded-4 sombra" id="carruselContainer">
-                          <div class="carousel-item active">
-                            <img src="fotos/carrusel2/imagen1.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel2/imagen2.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel2/imagen3.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                        </div>
-                        
-                      </div>
-                </div>
-            </div>
-            <div class="row d-lg-none">
-                <div class="col col-12 d-flex justify-content-center mt-3 ">
-                    <div class="card h-100 sinColor mt-2 " style="width: 8rem;  border: none;" id="fotografo0">
-                        <img src="avatars/vecteezy_avatar-of-a-brunette-woman_13923647_946.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex">
-                    <div class="col col-1"></div>
-                    <div class="col col-10 mt-3 text-center rounded-4">
-                    <p id="fraseFotografo" class="rounded-4">Fotografa de eventos deportivos y campeonatos</p>
-                </div> 
-                </div>
-                <div class="col col-12 mt-3 mb-5 d-flex align-items-center justify-content-center">
-                    <div class="col col-12 mt-3 mb-5 d-flex align-items-center justify-content-center">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-75" data-bs-ride="carousel" data-bs-interval="3000">
-                          <div class="carousel-item active">
-                            <img src="fotos/carrusel3/imagen1.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel3/imagen2.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="fotos/carrusel3/imagen3.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                        </div>
-                        
-                      </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <div class="row  d-none d-lg-block">
-                <div class="col d-flex">
-                    <div class="col col-3 ">
-                    <div class="card divSombreado h-100 sinColor mt-2 " style="width: 8rem;  border: none;" id="fotografo0">
-                        <img src="avatars/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-3 ">
-                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem; border: none;" id="fotografo1">
-                        <img src="avatars/User-Avatar-Profile-Free-PNG.png" class="card-img-top " alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-3 ">
-                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem;  border: none;" id="fotografo2">
-                        <img src="avatars/vecteezy_avatar-of-a-woman-in-hat_13923653_822.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-3 k">
-                    <div class="card divSombreado h-100 sinColor mt-2" style="width: 8rem;  border: none;" id="fotografo3">
-                        <img src="avatars/vecteezy_avatar-of-a-brunette-woman_13923647_946.png" class="card-img-top imgPos" alt="...">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-            </div>
-                </div>
-                
-            <div class="row d-none d-lg-block">
-                <div class="col d-flex">
-                    <div class="col col-3"></div>
-                    <div class="col col-6 mt-5 text-center rounded-4">
-                    <p id="fraseFotografo" class="rounded-4">Fotrografo especializado en bodas y eventos formales</p>
-                </div> 
-                </div>
-                
-            </div>
-            <div class="row d-none d-lg-block">
-                
-                <div class="col mt-3 d-flex align-items-center justify-content-center">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade w-50">
-                        <div class="carousel-inner rounded-4 sombra" id="carruselContainer">
-                          <div class="carousel-item active mio">
-                            <img src="fotos/carrusel1/imagen1.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item mio">
-                            <img src="fotos/carrusel1/imagen2.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                          <div class="carousel-item mio">
-                            <img src="fotos/carrusel1/imagen3.jpg" class="d-block w-100 rounded-4" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="col d-flex">
           <div class="col col-1"></div>
@@ -443,6 +277,7 @@
 
   <section id="cotizacion container">
     <h1>martin</h1>
+    
   </section>
 
   <section id="contacto">
@@ -469,6 +304,7 @@
     </div>
   </section>
 
+  
 
   <!-- JS BOOTSTRAP-->
   <script src="script.js"></script>
@@ -476,6 +312,7 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Libreria JSPDF-->
 </body>
 
 </html>
