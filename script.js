@@ -1,5 +1,13 @@
 
 //JS PABLO SECTION FOTOS
+//Consulta a API
+
+
+
+
+
+
+
 const pdfGenerator=()=>{
   // Cargar el contenido del archivo HTML externo
   var xhr = new XMLHttpRequest();
